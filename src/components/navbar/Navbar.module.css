@@ -1,0 +1,110 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbarBackground-color);
+    align-items: center;
+    height: 3em;
+    color: var(--navbar-text-color);
+}
+.heading{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3.5em;
+    cursor: pointer;
+}
+.heading:hover{
+    color: var(--navbar-text-hover-color);
+}
+.detail{
+    display: flex;
+    font-size: 0.8em;
+    gap: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 4em;
+}
+.content{
+    color: var(--navbar-text-color);
+    text-decoration: none;
+}
+.content:hover{
+    color: var(--navbar-text-hover-color);
+    cursor: pointer;
+}
+.github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.github button{
+    padding: 0.8em 0.9em;
+    font-size: 0.7em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: var(--background-color);
+    color: var(--navbar-text-color);
+}
+.github button:hover{
+    background: transparent;
+    border: 1px solid var(--background-color);
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .heading{
+        font-size: 18px;
+     }
+     .navbar{
+        height: 45px;
+    }
+    .github button{
+        font-size: 10px;
+    }
+    .detail{
+        font-size: 12px;
+    }
+}
+@media(max-width:560px){
+    .heading{
+        font-size: 14px;
+     }
+     .navbar{
+        height: 44px;
+    }
+    .github button{
+        font-size: 9px;
+    }
+    .detail{
+        font-size: 9.5px;
+    }
+}
+@media(max-width: 425px){
+    .heading{
+        font-size: 9px;
+     }
+     .navbar{
+        height: 40px;
+    }
+    .github button{
+        font-size: 8px;
+    }
+    .detail{
+        font-size: 8px;
+    }
+ }
+    
+@media(max-width: 380px){
+    .heading{
+        font-size: 11px;
+     }
+     .navbar{
+        height: 44px;
+    }
+    .github button{
+        font-size: 9px;
+    }
+    .detail{
+        font-size: 5px;
+        gap: 5px;
+        flex-direction: column;
+    }
+}

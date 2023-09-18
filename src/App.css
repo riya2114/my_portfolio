@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+body{
+  line-height: 1.3;
+}
+
+:root{
+  --navbarBackground-color: #021a48;
+  --navbar-text-color: #fff;
+  --navbar-text-hover-color: #0a6472;
+  --background-color: #085883;
+  --photo-box-shadow: rgba(25, 160, 144, 0.955) 0px 5px 15px;
+  --text-span-color: #0ff9f5;
+  --text-shadow:  0 0px 0px #09e3ef, 
+   -1px 1px #13a386, 
+  -1px 0px 1px #0e7ca1;
+  --skill-background-color: #496ceb;
+  --skill-text-shadow:  0 0px #7b8282, 
+   -1px 1px #404544, 
+  -1px 0px #51585b;
+  --skill-text-color: #d8dedf;
+  --grey-color: #646b6cb2;
+}

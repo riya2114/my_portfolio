@@ -1,0 +1,101 @@
+.my_skills{
+    display: flex;
+    align-items: center;
+    gap: 8em;
+    justify-content: center;
+    background-image: url(images/skill.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.technical_skill{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.professional_skill{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.skill{
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+.technical_skill h1{
+    font-size: 1.5em;
+    text-shadow: var(--skill-text-shadow);
+}
+.technical_skill h4{
+    font-size: 1em;
+    color: var(--skill-text-color);
+}
+.professional_skill h1{
+    font-size: 1.5em;
+    text-shadow: var(--skill-text-shadow);
+}
+.professional_skill h4{
+    font-size: 1em;
+    color: var(--skill-text-color);
+}
+.border_line{
+    border: 2px solid var(--background-color);
+    margin-top: 0.8em;
+}
+.border{
+    border: 1px solid var(--background-color);
+    width: 11.2em;
+}
+.border1{
+    border: 1px solid var(--background-color);
+    width: 2em;
+}
+.border2{
+    border: 1px solid var(--background-color);
+    width: 8em;
+}
+.border3{
+    border: 1px solid var(--background-color);
+    width: 9.5em;
+}
+.skill p{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.line{
+    border: 1px solid var(--background-color);
+    width: 10.5em;
+}
+.line1{
+    border: 1px solid var(--background-color);
+    width: 7.5em;
+}
+.line2{
+    border: 1px solid var(--background-color);
+    width: 9.5em;
+}
+.line3{
+    border: 1px solid var(--background-color);
+    width: 8.6em;
+}
+
+@media(max-width: 650px){
+    .technical_skill{
+        font-size: 9.8px;
+    }
+    .professional_skill{
+        font-size: 9.8px;
+    }
+}
+@media(max-width: 560px){
+    .my_skills{
+        gap: 4em;
+    }
+    .technical_skill{
+        font-size: 8.5px;
+    }
+    .professional_skill{
+        font-size: 8.5px;
+    }
+}
+@media(max-width: 425px){
+    .my_skills{
+        flex-direction: column;
+    }
+}

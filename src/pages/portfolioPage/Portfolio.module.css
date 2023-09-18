@@ -1,0 +1,106 @@
+.portfolioParent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/portfolio.jpg);
+    height: 100vh;
+    gap: 10em;
+}
+.itsMe{
+    width: 14em;
+    border-radius: 8em;
+    height: 14em;
+    margin-left: 0.4em;
+    margin-top: 0.4em;
+}
+.image{
+    object-fit: fill;
+    height: 15em;
+    border: 2px solid var(--navbar-text-color);
+    border-radius: 8em;
+    box-shadow: var(--photo-box-shadow);
+    width: 15em;
+}
+.aboutMe{
+    width: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--navbar-text-color);
+}
+.Me{
+    font-size: 1em;
+}
+.para{
+    font-size: 0.75em;
+}
+.name{
+    font-size: 1.5em;
+}
+
+.resume button{
+    margin-top: 1em;
+    font-size: 1em;
+    padding: 0.5em 0.5em;
+    border: none;
+    border-radius: 0.4em;
+    background: transparent;
+    border: 1px solid var(--navbarBackground-color);
+}
+.resume button:hover{
+    color: var(--navbar-text-color);
+    background: var(--navbarBackground-color);
+    border: 1px solid var(--navbar-text-color);
+    cursor: pointer;
+}
+
+ @media(max-width:768px){
+    .portfolioParent{
+        gap: 80px;
+    }
+}
+@media(max-width:600px){
+    .portfolioParent{
+        gap: 40px;
+    }
+    .aboutMe{
+        font-size: 12px;
+    }
+    .itsMe{
+        width: 11em;
+        height: 11em;
+    }
+    .image{
+        width: 12em;
+        height: 12em;
+    }
+}
+@media(max-width: 450px){
+    .aboutMe{
+        font-size: 10px;
+    
+    }
+    .itsMe{
+        width: 9em;
+        height: 9em;
+    }
+    .image{
+        width: 10em;
+        height: 10em;
+    }
+ }
+@media(max-width: 380px){
+    .portfolioParent{
+        flex-direction: column;
+    }
+    .aboutMe{
+        font-size: 12px;
+    }
+    .image{
+        margin-top: 50px;
+        width: 12em;
+        height: 12em;
+    }
+    .itsMe{
+        width: 11em;
+        height: 11em;
+    }
+} 

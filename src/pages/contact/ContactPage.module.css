@@ -1,0 +1,105 @@
+.contact_parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    background-image: url(images/my.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.heading{
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.paragraph p{
+    font-size: 0.9em;
+    width: 13em;
+    margin-top: 0.4em;
+}
+.paragraph h5{
+    margin-top: 0.7em;
+    font-size: 1.2em;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9em;
+    margin-top: 1.8em;
+    height: 12em;
+}
+input::placeholder{
+    font-size: 0.9em;
+    color: var(--grey-color);
+}
+.input_text input{
+    width: 15em;
+    padding: 0.5em 0.9em;
+    outline: none;
+    background-color: var(--skill-text-color);
+    border: none;
+    border-radius: 0.1em;
+}
+.input_message{
+    height: 7em;
+    width: 15em;
+    padding-bottom: 3.5em;
+    padding-left: 0.6em;
+    outline: none;
+    background-color: var(--skill-text-color);
+    border: none;
+    border-radius: 0.1em;
+
+}
+.submit_button button{
+    width: 6.5em;
+    font-size: 0.9em;
+    height: 2.8em;
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: 0.15em;
+    background-color: var(--navbarBackground-color);
+    color: var(--navbar-text-color);
+    cursor: pointer;
+}
+.submit_button button:hover{
+    background-color: var(--navbar-text-color);
+    color: var(--navbarBackground-color);
+    border: 1.1px solid var(--navbarBackground-color);
+}
+@media(max-width: 560px){
+    .paragraph{
+        font-size: 10px;
+    }
+   input::placeholder{
+    font-size: 9.5px;
+   }
+   .input_text input{
+    width: 12em;
+   }
+   .input_message{
+    width: 12em;
+    height: 5em;
+   }
+   .submit_button button{
+    font-size: 9px;
+   }
+}
+@media(max-width:425px){
+    .contact_parent{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .paragraph{
+        font-size: 12px;
+    }
+    .input_message{
+        height: 4em;
+        padding-top: 0.8em;
+    }
+}
